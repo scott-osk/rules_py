@@ -49,7 +49,7 @@ VPIP="${VPYTHON} -m pip"
 # use the bundled version of pip, which does not match the version of pip bundled with the interpreter distro.
 # So we symlink in this ourselves.
 VENV_FLAGS=(
-  "--without-pip"
+  # "--without-pip"
   "--clear"
   # Setting copies seems to break as venv doesn't copy libs when being forced to do copying rather than symlinks,
   # so we do it manually before starting the binary
